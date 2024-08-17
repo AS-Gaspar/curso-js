@@ -1,33 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>First steps with DOM</title>
-    <style>
-        body {
-            background: rgb(87, 87, 182);
-            color: white;
-            font: normal 18pt arial;
-        }
-    </style>
-</head>
-<body>
-    <h1>My studies with DOM</h1>
-    <p>Here go the result</p>
-    <p>Learn to use a <strong>DOM</strong> em JavaScript.</p>
-    <div id="msg">Click here!</div>
-    <script>
-        var corpo = window.document.body
-        var p1 = window.document.getElementsByTagName('p')[1] // Alterando o N° entre conchetes, muda o p repetido
-        /*
-        var d = window.document.getElementById('msg')
-        d.style.background = 'green'
-        // d.innerText = 'I await...'
-        */
-        var d = window.document.querySelector('div#msg')
-        d.style.background = 'blue' 
-
-    </script>
-</body>
-</html>                                                                                                                                                                                     
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>First steps with DOM</title>
+        <style>
+            body {
+                background: rgb(87, 87, 182);
+                color: white;
+                font: normal 18pt arial;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My studies with DOM</h1>
+        <p>Here go the result</p>
+        <p>Learn to use a <strong>DOM</strong> em JavaScript.</p>
+        <div id="msg">Click here!</div>
+        <script>
+            var corpo = window.document.body
+            var p1 = window.document.getElementsByTagName('p')[1] // Alterando o N° entre conchetes, muda o p repetido
+            /*
+            var d = window.document.getElementById('msg')
+            d.style.background = 'green'
+            // d.innerText = 'I await...'
+            */
+            var d = window.document.querySelector('div#msg')
+            d.style.background = 'blue'
+        </script>
+    </body>
+</html>

@@ -17,17 +17,12 @@
     <h1>My studies with DOM</h1>
     <p>Here go the result</p>
     <p>Learn to use a <strong>DOM</strong> em JavaScript.</p>
-    <div name="msg">Click here!</div>
+    <div id="msg">Click here!</div>
     <script>
-        var corpo = window.document.body
-        var p1 = window.document.getElementsByTagName('p')[1] // Alterando o N° entre conchetes, muda o p repetido
-        /*
-        var d = window.document.getElementById('msg')
-        d.style.background = 'green'
-        // d.innerText = 'I await...'
-        */
-        var d = window.document.getElementByName('msg')[0]
-        d.innerText = 'Hello!'
+        var p1 = document.getElementsByTagName('p')[1]
+        document.write('Está escrito assim: ' + p1.innerText)
+        //var d = document.getElementById('msg')
+        var d = document.querySelector('#msg')
+        d.style.background = 'red'
     </script>
-</body>
-                                                                                                                                                                                     
+<body>                                                                                        </html>                                                                             
