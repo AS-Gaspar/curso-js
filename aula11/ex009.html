@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+</head>
+<body>
+    <h1>DESCOBIRDOR DOS SETE MARES</h1>
+    <p>Descubra se sua nacionalidade condiz com o País registrado.</p>
+    Você vive em qual país? <input type="text" name="nacio" id="nacio">
+    <input type="submit" value="Verificar" onclick="verificar()">
+    <div id="text">
+
+    </div>
+    <div id="res">
+
+    </div>
+    <script>
+        var pais = document.querySelector('input#nacio')
+        function verificar() {
+            var res = document.getElementById('res')
+            var text = document.getElementById('text')
+            text.innerHTML += `<p>Você mora no ${pais.value}!</p>`
+            if (pais == 'Brasil') {
+                res.innerHTML += `<p>Você é Brasileiro!</p>`
+            } else {
+                res.innerHTML += `<p>Você é estrangeiro</p>`
+            }
+        }
+    </script>
+</body>
+</html>
